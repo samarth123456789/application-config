@@ -12,3 +12,10 @@ cloud:
       idle-timeout: 30000
       max-lifetime: 60000
       connection-timeout: 30000
+
+MysQL:
+  host: mysql
+  port: 3307
+  database: micro-mysql-db
+  username: root
+  password: root
