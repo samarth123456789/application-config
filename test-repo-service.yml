@@ -1,17 +1,17 @@
 cloud:
   name: name from yml file 
 
-  datasource:
-    url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}
-    username: ${MysQL.username}
-    password: ${MysQL.password}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
-      maximum-pool-size: 10
-      minimum-idle: 5
-      idle-timeout: 30000
-      max-lifetime: 60000
-      connection-timeout: 30000
+datasource:
+  url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}
+  username: ${MysQL.username}
+  password: ${MysQL.password}
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  hikari:
+    maximum-pool-size: 10
+    minimum-idle: 5
+    idle-timeout: 30000
+    max-lifetime: 60000
+    connection-timeout: 30000
 
 MysQL:
   host: mysql-db
