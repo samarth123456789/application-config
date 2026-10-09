@@ -14,7 +14,7 @@ cloud:
       connection-timeout: 30000
 
 MysQL:
-  host: mysql
+  host: mysql-db
   port: 3307
   database: micro-mysql-db
   username: root
