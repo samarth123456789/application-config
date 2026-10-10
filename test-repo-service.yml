@@ -14,7 +14,7 @@ datasource:
     connection-timeout: 30000
 
 MysQL:
-  host: mysql-db
+  host: localhost
   port: 3307
   database: micro-mysql-db
   username: root
