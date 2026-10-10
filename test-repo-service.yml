@@ -2,7 +2,7 @@ cloud:
   name: name from yml file 
 
 datasource:
-  url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}
+  url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
   username: ${MysQL.username}
   password: ${MysQL.password}
   driver-class-name: com.mysql.cj.jdbc.Driver
