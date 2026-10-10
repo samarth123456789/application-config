@@ -1,7 +1,17 @@
 cloud:
   name: name from yml file cloud
 
-datasource:
+
+
+MysQL:
+  host: 127.0.0.1
+  port: 3307
+  database: micro-mysql-db
+  username: root
+  password: root
+
+spring:
+  datasource:
   url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
   username: ${MysQL.username}
   password: ${MysQL.password}
@@ -12,16 +22,7 @@ datasource:
     idle-timeout: 30000
     max-lifetime: 60000
     connection-timeout: 30000
-
-MysQL:
-  host: localhost
-  port: 3307
-  database: micro-mysql-db
-  username: root
-  password: root
-
-spring:
-  jpa:
+jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
