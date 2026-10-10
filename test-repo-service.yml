@@ -1,5 +1,5 @@
 cloud:
-  name: name from yml file 
+  name: name from yml file cloud
 
 datasource:
   url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
