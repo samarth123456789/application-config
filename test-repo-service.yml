@@ -12,10 +12,10 @@ MysQL:
 
 spring:
   datasource:
-  url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
-  username: ${MysQL.username}
-  password: ${MysQL.password}
-  driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
+    username: ${MysQL.username}
+    password: ${MysQL.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
   hikari:
     maximum-pool-size: 10
     minimum-idle: 5
