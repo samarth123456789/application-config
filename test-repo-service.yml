@@ -22,7 +22,9 @@ spring:
     idle-timeout: 30000
     max-lifetime: 60000
     connection-timeout: 30000
-jpa:
+  jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+    ddl-auto: update
+      
