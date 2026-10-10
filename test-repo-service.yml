@@ -4,7 +4,7 @@ cloud:
 
 
 MysQL:
-  host: 127.0.0.1
+  host: localhost
   port: 3307
   database: micro-mysql-db
   username: root
