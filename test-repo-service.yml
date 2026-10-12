@@ -6,9 +6,9 @@ cloud:
 MysQL:
   host: localhost
   port: 3307
-  database: micro-mysql-db
+  database: microDb
   username: root
-  password: root
+  password: root321
 
 spring:
   datasource:
