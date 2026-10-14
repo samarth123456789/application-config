@@ -2,10 +2,20 @@ application:
   test:
     name: name from cloud dev
 
+MysQL:
+  host: mysqlDb
+  port: 3306
+  database: billingUserDb
+  username: root
+  password: root321
+  
 spring:
   profile:
     active: dev
   datasource:
+    url: jdbc:mysql://${MysQL.host}:${MysQL.port}/${MysQL.database}?allowPublicKeyRetrieval=true&useSSL=false
+    username: ${MysQL.username}
+    password: ${MysQL.password}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -22,3 +32,8 @@ management:
   endpoint:
     health:
       show-details: always
+
+spring:
+  datasource:
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
