@@ -34,5 +34,6 @@ management:
       show-details: always
 
 springdoc:
-  swagger-ui.path: /swagger-ui.html
+  swagger-ui:
+    path: /swagger-ui.html
 
