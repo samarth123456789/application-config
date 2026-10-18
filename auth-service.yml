@@ -5,7 +5,7 @@ application:
 MysQL:
   host: mysqlDb
   port: 3306
-  database: billingUserDb
+  database: billingAuthDb
   username: root
   password: root321
   
