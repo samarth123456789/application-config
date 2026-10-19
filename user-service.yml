@@ -8,6 +8,9 @@ MysQL:
   database: billingUserDb
   username: root
   password: root321
+
+server:
+  port: 8902
   
 spring:
   profile:
