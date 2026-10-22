@@ -1,15 +1,11 @@
-
-
 eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8700/eureka/
-    
-    register-with-eureka: true
-    #Reads the eureka server to get the list of other services
-    fetch-registry: true
-   
-    prefer-ip-address: true
+    client:
+        serviceUrl:
+            defaultZone: http://eureka-server:8700/eureka/
+        registerWithEureka: true
+        fetchRegistry: true
+    instance:
+        preferIpAddress: true
 
 spring:
   cloud:
