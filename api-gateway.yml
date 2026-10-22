@@ -1,0 +1,34 @@
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8700/eureka/
+    
+    register-with-eureka: true
+    #Reads the eureka server to get the list of other services
+    fetch-registry: true
+   
+    prefer-ip-address: true
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # Automatically creates routes based on Eureka Service IDs
+          enabled: true      
+          lower-case-service-id: true
+      
+      # Explicit Custom Routing Rules
+      routes:
+        - id: user-service-route
+        # "lb://" uses Eureka for load balancing
+          uri: lb://USER-SERVICE 
+          predicates:
+            - Path=/users/**
+            
+#        - id: order-service-route
+ #         uri: lb://ORDER-SERVICE
+ #         predicates:
+ #           - Path=/orders/**
