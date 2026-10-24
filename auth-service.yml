@@ -46,3 +46,5 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
+feign:
+  url: http://user-service:8901/
